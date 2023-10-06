@@ -1,0 +1,95 @@
+/* styles.css */
+.logo, .circle, .notorious-logo {
+    position: absolute;
+}
+
+.logo {
+    top: 13.5%; /* 페이지 상단의 50% 위치로 이동 */
+    left: 50%; /* 페이지 가운데로 이동 */
+    transform: translate(-50%, -50%); /* 이미지 중심으로 정렬 */
+    z-index: 3; /* 항상 가장 위에 표시 */
+    pointer-events: none;
+}
+
+.circle {
+    position: fixed; /* 요소를 화면에 고정 */
+    top: 52%; /* 수직 중앙 정렬 */
+    left: 50%; /* 수평 중앙 정렬 */
+    transform: translate(-48%, -50%);
+    transform-origin: center center; /* 회전 중심을 요소의 중앙으로 설정 */
+    animation: rotate_image 15s linear infinite;
+    z-index: 1; /* 요소의 쌓임 순서를 설정 */
+    pointer-events: none;
+}
+
+.notorious-logo {
+    top: 52%;
+    left: 50%;
+    transform: translate(-48%, -40%); /* 이미지 중심으로 정렬 */
+    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes rotate_image {
+    0% {
+        transform: translate(-48%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-48%, -50%) rotate(360deg);
+    }
+}
+
+/* 푸터 스타일 */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 7.5px 0;
+    position: fixed; /* 푸터를 화면 하단에 고정합니다. */
+    bottom: 0; /* 푸터가 화면 하단에 위치하도록 합니다. */
+    width: 100%; /* 푸터의 너비를 100%로 설정하여 화면 가로폭에 맞게 확장합니다. */
+}
+
+/* 하이퍼링크 스타일 */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 7.5px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.button {
+    position: fixed; 
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black; /* 검은색 배경 */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 버튼 호버 효과 */
+.button:hover {
+    background-color: #333; /* 호버 시 어두운 색으로 변경 */
+}
+
