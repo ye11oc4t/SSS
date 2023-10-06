@@ -44,7 +44,7 @@
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 7.5px 0;
+    padding: 0;
     position: fixed; /* 푸터를 화면 하단에 고정합니다. */
     bottom: 0; /* 푸터가 화면 하단에 위치하도록 합니다. */
     width: 110%; /* 푸터의 너비를 100%로 설정하여 화면 가로폭에 맞게 확장합니다. */
